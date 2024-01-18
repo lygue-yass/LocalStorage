@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | G24 POCs</title>
+    <title>Unity WebGL Player | g24_sandbox</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=960 height=2160 tabindex="-1" style="width: 960px; height: 2160px; background: #231F20"></canvas>
-    <script src="Build/LocalStorage.loader.js"></script>
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/g24_sandbox.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,13 +25,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/LocalStorage.data",
-        frameworkUrl: "Build/LocalStorage.framework.js",
-        codeUrl: "Build/LocalStorage.wasm",
+        dataUrl: "Build/g24_sandbox.data",
+        frameworkUrl: "Build/g24_sandbox.framework.js",
+        codeUrl: "Build/g24_sandbox.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "G24 POCs",
-        productVersion: "1.0",
+        companyName: "LYGUE",
+        productName: "g24_sandbox",
+        productVersion: "0.1",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
